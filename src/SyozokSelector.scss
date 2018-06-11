@@ -1,0 +1,17 @@
+.syozok-selector
+{
+	z-index: 10;
+	position: relative;
+	.value 
+	{
+		&:before
+		{
+			content: attr(data-tooltip);
+			background: #aaa;
+			color: #fff;
+			padding: 0 5px;
+			border-radius: 5px;
+			margin-right: 5px;
+		}
+	}
+}

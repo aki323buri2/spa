@@ -1,0 +1,17 @@
+.debug-switch
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 200px;
+	z-index: 10;
+	padding: 5px;
+	box-shadow: 3px 3px 3px rgba(#000, .5);
+	.toggle-label
+	{
+		margin-left: .5em;
+		margin-top: .3em;
+		position: absolute;
+		width: 100px;
+	}
+}

@@ -1,0 +1,139 @@
+$danger: orangered;
+.datepicker
+{
+	.clickable
+	{
+		cursor: pointer;
+		&:hover
+		{
+			opacity: .3;
+			transition: .3s;
+		}
+	}
+	.datepicker-input 
+	{
+		.control
+		{
+			.input
+			{
+				&.is-invalid
+				{
+					color: $danger;
+					border-color: $danger;
+					background: rgba($danger, .2);
+				}
+				&~.icon.clickable
+				{
+					pointer-events: auto;
+				}
+				&~.icon.prev-day
+				{
+					right: 40px;
+				}
+				&~.icon.next-day
+				{
+					right: 20px;
+				}
+			}
+		}
+	}
+
+	.calendar
+	{
+		display: none;
+		&.active
+		{
+			display: block;
+		}
+
+		width: 300px;
+		border: 10px solid dimgray;
+		position: absolute;
+		background: #fff;
+
+		z-index: 10;
+
+		.calendar-month
+		{
+			display: flex;
+			text-align: center;
+			background: #fff;
+			.prev, .next
+			{
+				flex: 1;
+			}
+			.month
+			{
+				flex:5;
+				background: gray;
+				color: #fff;
+			}
+		}
+		.calendar-weekdays
+		{
+			display: flex;
+			text-align: center;
+			line-heihght: 2em;
+			background: darkgray;
+			color: #fff;
+			.weekday
+			{
+				flex: 1;
+				&.w0, &.w6
+				{
+					background: gray;
+					color: #fff;
+				}
+			}
+		}
+		.calendar-days
+		{
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+			line-height: 2em;
+			.day
+			{
+				width: 14.285%;
+				background: #eee;
+				border-right: 1px solid silver;
+				border-bottom: 1px solid silver;
+				&.w6 
+				{
+					border-right: none;
+				}
+				&.w0, &.w6
+				{
+					background: #fff;	
+				}
+				&.is-disabled 
+				{
+					background: #ccc;
+					color: #aaa;
+				}
+				&.is-today
+				{
+					background: dimgray;
+					color: #fff;
+				}
+				&.is-selected
+				{
+					background: dodgerblue;
+					color: #fff;
+				}
+			}
+		}
+		.overlay
+		{
+			position: fixed;
+			background: rgba(#000, .5); 
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			z-index: -1;
+		}
+	}
+
+}

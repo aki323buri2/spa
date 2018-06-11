@@ -1,0 +1,23 @@
+.app 
+{
+	.field
+	{
+		display: flex;
+		line-height: 2.5em;
+		.field-title
+		{
+			width: 100px;
+			text-align: right; 
+			font-weight: 700;
+		}
+		.field-body
+		{
+			padding-left: 1em;
+			.datespan-splitter
+			{
+				width: 40px;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.selector
+{
+	.value-badge
+	{
+		position: absolute;
+		margin-left: -10px;
+		margin-top: 30px;
+		font-size: 12px;
+		height: 2em;
+		line-height: 2em;
+		padding: 0 .5em;
+		border-radius: 1em;
+		background: #ccc;
+		color: #fff;
+	}
+	.tooltip
+	{
+		&:before
+		{
+			position: absolute;
+			font-size: 12px;
+			height: 2em;
+			line-height: 2em;
+			padding: 0 1em;
+			z-index: 100;
+			content: attr(data-tooltip);
+			border: 1px solid #ccc;
+			background: #999;
+			color: #fff;
+			border-radius: 1em;
+			margin-top: 30px;
+			opacity: 0;
+			transition: opacity .5s;
+		}
+		&:hover
+		{
+			&:before
+			{
+				display: block;
+				opacity: 1;
+			}
+		}
+		
+	}
+}

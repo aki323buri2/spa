@@ -1,0 +1,56 @@
+{
+  "name": "delivery-centers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.2"
+
+    , "extract-text-webpack-plugin": "next"
+    , "html-webpack-plugin": "*"
+    , "babel-cli": "*"
+    , "babel-loader": "*"
+    , "babel-preset-env": "*"
+    , "babel-preset-react": "*"
+    , "babel-plugin-transform-object-rest-spread": "*"
+    , "babel-plugin-transform-class-properties": "*"
+    , "babel-plugin-transform-decorators-legacy": "*"
+    , "babel-plugin-transform-runtime": "*"
+    , "file-loader": "*"
+    , "style-loader": "*"
+    , "css-loader": "*"
+    , "postcss-loader": "*"
+    , "sass-loader": "*"
+    , "node-sass": "*"
+    , "browser-sync": "*"
+    , "nodemon": "*"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+
+    , "react-router-dom": "*"
+    , "react-router-redux": "*"
+    , "redux": "*"
+    , "redux-saga": "*"
+    , "redux-logger": "*"
+    , "react-redux": "*"
+    , "moment": "*"
+    , "numeral": "*"
+    , "filesize": "*"
+    , "classnames": "*"
+    , "bulma": "*"
+    , "bulma-extensions": "*"
+    , "@fortawesome/fontawesome-free-webfonts": "*"
+    , "react-select": "next"
+    , "rc-checkbox": "*"
+    , "react-toggle": "*"
+  }
+}
